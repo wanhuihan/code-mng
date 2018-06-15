@@ -1,0 +1,77 @@
+//
+
+.BS_Widgets {
+    //
+    &.BS_Widgets_tabs {
+        &.BS_Widgets_tabs_style_1 {
+            .ks-switchable-nav {
+                font-size: 0;
+                li {
+                    display: inline-block;
+                    width: 25%;
+                    font-size: 14px;
+                    line-height: 30px;
+                }
+            }
+            .ks-switchable-content {
+                position: relative;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    //
+    &.BS_Widgets_self {
+        &.BS_Widgets_self_style_2  {
+            div {
+                font-size: 0;
+                ul {
+                    li {
+                        display: inline-block;
+
+                    }
+                }
+            }
+        }
+    }
+    // This is the only style for demostration for the workmates in BS, the class name 'demo' will be removed when generate the code for TB.
+    &.demo {
+        &.BS_Widgets_tabs {
+            &.BS_Widgets_tabs_style_1 {
+                .ks-switchable-nav {
+                    // font-size: 0;
+                    li {
+                        line-height: 30px;
+                        &:first-child {
+                            background: red;
+                        }
+                        &:nth-child(2) {
+                            background: yellow;
+                        }
+                        &:nth-child(3) {
+                            background: blue;
+                        }
+                        &:nth-child(4) {
+                            background: purple;
+                        }
+                    }
+                }
+                .ks-switchable-content {
+                    height: 300px;
+                    div {
+                        &:first-child {
+                            height: 300px;
+                            background: red;
+                        }
+                    }
+                }
+                .J_TWidget  {
+                    width: 899px;
+                }
+            }
+        }
+    }
+}
+//
