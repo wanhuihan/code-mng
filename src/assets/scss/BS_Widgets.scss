@@ -25,53 +25,132 @@
     //
     &.BS_Widgets_self {
         &.BS_Widgets_self_style_2  {
-            div {
-                font-size: 0;
-                ul {
-                    li {
-                        display: inline-block;
+            // div {
+            font-size: 0;
+            ul {
+                li {
+                    display: inline-block;
+                    width: 50%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            // }
+        }
+        &.BS_Widgets_self_style_3 {
+            font-size: 0;
+            .BS_Widgets_self_style_3_right_side, .BS_Widgets_self_style_3_left_side {
+                display: inline-block;
+            }
+            .BS_Widgets_self_style_3_right_side {
+                width: 60%;
+                position: relative;
+                img {
+                    width: 100%;
+                }
+            }
+            .BS_Widgets_self_style_3_left_side {
+                width: 40%;
+                font-size: 20px;
+                vertical-align: top;
+                p {
+                    font-size: 14px;
+                }
+                animation: testanimations 5s infinite linear;
+                animation-delay:3s;
+            }
+            .BS_Widgets_self_style_3_box {
+                height: 300px;
+                overflow: hidden;
+                .BS_S_S3_rs_item, .BS_S_S3_ls_item {
+                    height: 300px;
+                }
+            }
+        }
+        &.BS_Widgets_self_style_4 {
+            // overflow:hidden;
+            // position: relative;
+            .yslider-stage {
+                p {
+                    position: relative;
+                    b {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        color: #fff;
+                        font-size: 25px;
+                        transform: rotate(-30deg);
+                        &:first-child {
+
+                        }
+                    }
+                }
+            }
+            .yslider-stick {
+                position: absolute;
+                z-index: 9999;
+                li {
+                        left: 20px;
+                        width: 200px;
+                        opacity: 0;
+                        position: absolute;
+                        transform: rotate(-7deg) skewX(-18deg);
+                        transform-origin: left bottom;
+                        color: #fff;
+                        font-size: 20px;
+                    &.selected {
+                        opacity: 1;
+                        left: 0;
+                        transform: rotate(0) skewX(0);
+                        transition: opacity 1s ease-in, transform 1s ease-in, left 1s ease-in;
+                    }
+                    // display: inline-block;
+                    // width: 400px;
+                    // height: 220px;
+                    // img {
+                    //     width: 100%;
+                    // }
+                }
+            }
+        }
+        &.BS_Widgets_self_style_5  {
+            ul {
+                width: 640px;
+                height: 320px;
+                position: relative;
+                & > li {
+                    position: absolute;
+                    p {
+                        position: absolute;
+                        top: 50%;
+                        color: #fff;
+                        font-size: 30px;
 
                     }
                 }
             }
         }
     }
-    // This is the only style for demostration for the workmates in BS, the class name 'demo' will be removed when generate the code for TB.
-    &.demo {
-        &.BS_Widgets_tabs {
-            &.BS_Widgets_tabs_style_1 {
-                .ks-switchable-nav {
-                    // font-size: 0;
-                    li {
-                        line-height: 30px;
-                        &:first-child {
-                            background: red;
-                        }
-                        &:nth-child(2) {
-                            background: yellow;
-                        }
-                        &:nth-child(3) {
-                            background: blue;
-                        }
-                        &:nth-child(4) {
-                            background: purple;
-                        }
-                    }
-                }
-                .ks-switchable-content {
-                    height: 300px;
-                    div {
-                        &:first-child {
-                            height: 300px;
-                            background: red;
-                        }
-                    }
-                }
-                .J_TWidget  {
-                    width: 899px;
-                }
-            }
-        }
-    }
 }
 //
+@keyframes testanimations {
+    0% {
+        margin-top: 0;
+    }
+    20% {
+        margin-top: -300px;
+    }
+    40% {
+        margin-top: -600px;
+    }
+    60% {
+        margin-top: -900px;
+    }
+    80% {
+        margin-top: -1200px;
+    }
+    80% {
+        margin-top: -1500px;
+    }
+}

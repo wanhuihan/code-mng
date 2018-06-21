@@ -1,6 +1,4 @@
 //
-import hello from '../components/HelloWorld';
-
 import test from '../components/test';
 
 import Vue from 'vue';
@@ -17,17 +15,23 @@ import code from '../components/code';
 //
 import generate from '../components/codeGenerate';
 //
+import preview from '../components/codeGenerate/preview';
+//
+import homeIndex from '../components/homeIndex';
+//
 Vue.use(Router);
 //
 var routes = [
     {
-        component: hello,
-        path: '/hello'
-    }, {
         component: home,
         path: '/',
-        // redirect: 'dynamicEffects',
+        redirect: 'index',
         children:[
+            {
+                component: homeIndex,
+                path: 'index',
+                name: 'index'
+            },
             {
                 component: staticEffects,
                 path: 'staticEffects'
@@ -39,8 +43,9 @@ var routes = [
                 component: code,
                 path: 'code'
             }, {
-                component: generate,
-                path: 'generate'
+                component: preview,
+                path: 'preview',
+                name: 'preview'
             }
         ]
     },

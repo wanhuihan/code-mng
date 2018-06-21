@@ -1,18 +1,18 @@
 <template>
-  <div id="app">
-
-    <router-view></router-view>
-
-  </div>
+    <div id="app">
+        <router-view></router-view>
+    </div>
 
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 // import {config} from './TB/config.js';
+// import navigation from './components/public/navigation';
 
 export default {
   name: 'app'
+  //
 }
 </script>
 

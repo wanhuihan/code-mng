@@ -15,7 +15,7 @@ import 'iview/dist/styles/iview.css';
 Vue.use(iView);
 //
 // console.log(Vue);
-new Vue({
+var BS_Store = new Vue({
   el: '#app',
   router,
   store,

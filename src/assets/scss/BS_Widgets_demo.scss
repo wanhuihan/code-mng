@@ -1,0 +1,71 @@
+//
+// This is the only style for demostration for the workmates in BS, the class name 'demo' will be removed when generate the code for TB.
+.demo {
+    &.BS_Widgets_tabs {
+        &.BS_Widgets_tabs_style_1 {
+            .ks-switchable-nav {
+                // font-size: 0;
+                li {
+                    line-height: 30px;
+                    &:first-child {
+                        background: red;
+                    }
+                    &:nth-child(2) {
+                        background: yellow;
+                    }
+                    &:nth-child(3) {
+                        background: blue;
+                    }
+                    &:nth-child(4) {
+                        background: purple;
+                    }
+                }
+            }
+            .ks-switchable-content {
+                height: 300px;
+                div {
+                    img {
+                        width: 100%;
+                    }
+                    &:first-child {
+                        height: 300px;
+                        background: red;
+                    }
+                }
+            }
+            .J_TWidget  {
+                width: 100%;
+            }
+        }
+    }
+    &.BS_Widgets  {
+        width: 80%;
+    }
+    &.BS_Widgets_self_style_4  {
+        width:405px;
+        height: 220px;
+        padding: 0;
+        img {
+            // width: 100%;
+        }
+        .J_TWidget {
+            overflow: hidden;
+            .yslider-stick {
+                // width: 2000px;
+                // font-size: 0;
+                li {
+                    margin-left:0;
+                    // position: re;
+                    // &.selected {
+                    //     margin-left:-400px;
+                    //     transition: margin-left 1s ease-in;
+                    // }
+                    h2 {
+                        position: absolute;
+                    }
+                }
+            }
+
+        }
+    }
+}
