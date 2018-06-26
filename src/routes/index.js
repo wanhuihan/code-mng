@@ -30,11 +30,13 @@ var routes = [
             {
                 component: homeIndex,
                 path: 'index',
-                name: 'index'
+                name: 'index',
             },
             {
                 component: staticEffects,
-                path: 'staticEffects'
+                path: 'staticEffects',
+                name: 'staticEffects'
+                // name: 'staticEffects'
             }, {
                 component: dynamicEffects,
                 path: 'dynamicEffects',

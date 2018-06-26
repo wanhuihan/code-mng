@@ -21,6 +21,51 @@ let widgetConfig = {
             'easing':'easeOutStrong',
             'countdown':true
         }
+    },
+    //
+    self: {
+        style_5: {
+            'autoplay': false,
+            'navCls':'ks-switchable-nav',
+            'contentCls':'ks-switchable-content',
+            'effect': 'scrolly',
+            'easing': 'easeOutStrong',
+            'steps':1,
+            'circular': true,
+            'prevBtnCls': 'prev_btn',
+            'nextBtnCls': 'next_btn',
+            'disableBtnCls': 'disable'
+        },
+        style_6: {
+            'autoplay': false,
+            'navCls':'ks-switchable-nav',
+            'contentCls':'ks-switchable-content',
+            'effect': 'scrolly',
+            'easing': 'easeOutStrong',
+            'steps':1,
+            'circular': false,
+            'prevBtnCls': 'mall-prev',
+            'nextBtnCls': 'mall-next',
+            'disableBtnCls': 'disable'
+        },
+        style_7: {
+            'autoplay': true,
+            'navCls':'ks-switchable-nav',
+            'contentCls':'ks-switchable-content',
+            'effect': 'scrolly',
+            'easing': 'easeBoth',
+            'steps':1,
+            'circular': true,
+            'prevBtnCls': 'prev_btn',
+            'nextBtnCls': 'next_btn',
+            'disableBtnCls': 'disable',
+            // 'duration': 0.1,
+            // 'countdown': true,
+            // 'countdownFromStyle': 'border:2px solid red',
+            // 'delay': 10,
+            'interval': 5,
+            'activeTriggerCls': 'bs-active'
+        }
     }
 }
 //
@@ -120,26 +165,26 @@ let effects = new Vuex.Store({
                 },{
                     code: `<div class="J_TWidget section loading slide1"
                     data-widget-type="Slide" data-widget-config=${JSON.stringify(widgetConfig.slide.style_2)}>
-                    <ol class="ks-switchable-content">
-                        <li>
-                            <a href="#" target="_blank">
-                                <img alt="" src="http://img05.taobaocdn.com/tps/i5/T1HllqXjXpXXXXXXXX-470-150.jpg"/>
-                            </a>
-                        </li>
-                        <li class="hidden">
-                            hello world
-                        </li>
-                        <li class="hidden">
-                            <a target="_blank" href="#">
-                                <img alt="" width="470" height="150" border="0" src="http://img.alimama.cn/bcrm/adboard/picture/2009-12-29/091229160359.jpg"/>
-                            </a>
-                        </li>
-                        <li class="hidden">
-                            <a href="#" target="_blank">
-                                <img alt="" src="http://img01.taobaocdn.com/tps/i1/T1qS0qXhBhXXXXXXXX-470-150.jpg"/>
-                            </a>
-                        </li>
-                    </ol>
+                        <ol class="ks-switchable-content">
+                            <li>
+                                <a href="#" target="_blank">
+                                    <img alt="" src="http://img05.taobaocdn.com/tps/i5/T1HllqXjXpXXXXXXXX-470-150.jpg"/>
+                                </a>
+                            </li>
+                            <li class="hidden">
+                                hello world
+                            </li>
+                            <li class="hidden">
+                                <a target="_blank" href="#">
+                                    <img alt="" width="470" height="150" border="0" src="http://img.alimama.cn/bcrm/adboard/picture/2009-12-29/091229160359.jpg"/>
+                                </a>
+                            </li>
+                            <li class="hidden">
+                                <a href="#" target="_blank">
+                                    <img alt="" src="http://img01.taobaocdn.com/tps/i1/T1qS0qXhBhXXXXXXXX-470-150.jpg"/>
+                                </a>
+                            </li>
+                        </ol>
                     </div>`,
                     style: {},
                     className: 'BS_Widgets_slide_style_2'
@@ -266,27 +311,18 @@ let effects = new Vuex.Store({
                         <div class="yslider-stage">
                             <p>
                                 <img width="405" height="220" alt="终极秒杀场" src="http://placeimg.com/640/480/animals"/>
-
                             </p>
                             <p>
-
-                                    <img width="405" height="220" alt="9折话费" src="http://placeimg.com/640/480/any"/>
-
+                                <img width="405" height="220" alt="9折话费" src="http://placeimg.com/640/480/any"/>
                             </p>
                             <p>
-
-                                    <img width="405" height="220" alt="彩票大派送" src="http://placeimg.com/640/480/nature"/>
-
+                                <img width="405" height="220" alt="彩票大派送" src="http://placeimg.com/640/480/nature"/>
                             </p>
                             <p>
-
-                                    <img width="405" height="220" alt="限量抢购" src="http://placeimg.com/640/480/people"/>
-
+                                <img width="405" height="220" alt="限量抢购" src="http://placeimg.com/640/480/people"/>
                             </p>
                             <p>
-
-                                    <img width="405" height="220" alt="周末购" src="http://placeimg.com/640/480/tech"/>
-
+                                <img width="405" height="220" alt="周末购" src="http://placeimg.com/640/480/tech"/>
                             </p>
 
                         </div>
@@ -315,68 +351,173 @@ let effects = new Vuex.Store({
                     className: 'BS_Widgets_self_style_4'
                 }, {
                     code: `
-                    <div class="J_TWidget section"
-                    data-widget-type="Slide" data-widget-config="{'effect':'scrolly','easing':'easeOutStrong','countdown':true}">
-                    <div class="ks-switchable-content">
-                        <p>
-                            <a href="#" target="_blank">
-                                <img src="http://img03.taobaocdn.com/imgextra/i3/2141/T2PMXaXhtdXXXXXXXX_!!2141.jpg">
-                            </a>
-                        </p>
-                        <p>
-                            <a href="#" target="_blank">
-                                <img src="http://img03.taobaocdn.com/imgextra/i3/2141/T2hMtaXddeXXXXXXXX_!!2141.jpg">
-                            </a>
-                        </p>
-                        <p>
-                            <a target="_blank">
-                                <img src="http://img01.taobaocdn.com/imgextra/i1/2141/T2EXVbXl8cXXXXXXXX_!!2141.jpg">
-                            </a>
-                        </p>
-                        <p>
-                            <a target="_blank">
-                                <img src="http://www.ilovebag.com.cn/slphoto/myfile/2011/03/normal_634359713559510000.jpg">
-                            </a>
-                        </p>
-                        <p>
-                            <a target="_blank">
-                                <img src="http://www.ilovebag.com.cn/slphoto/myfile/2011/02/normal_634340788173826250.jpg">
-                            </a>
-                        </p>
+                    <div  id="J_MallSlide" class="J_TWidget"
+                    data-widget-type="Carousel"
+                    data-widget-config=${JSON.stringify(widgetConfig.self.style_6)}>
+                        <div id="J_Carousel" class="clearfix" >
+                            <ul class="ks-switchable-content">
+                                <li class="big-piclist"></li>
+                                <li class="big-piclist"></li>
+                            </ul>
+                        </div>
+                        <ul class="ks-switchable-nav">
+                            <li  class="ks-active BS_W_s_s_6_slice_1">
+                                <span class="BS_W_s_s_6_slice_bg"><img src="http://placeimg.com/300/300/people"></span>
+                                <span class="BS_W_s_s_6_slice_mask"></span>
+                                <h2>DARK 1</h2>
+                            </li><li  class="BS_W_s_s_6_slice_2">
+                                <span class="BS_W_s_s_6_slice_bg"><img src="http://placeimg.com/300/300/animals"></span>
+                                <span class="BS_W_s_s_6_slice_mask"></span>
+                                <h2>DARK 2</h2>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="ks-switchable-nav yslider-stick">
-                        <li style="" class="ks-active">
-                            <a target="_blank">
-                                我是帅
-                            </a>
-                        </li>
-                        <li class="">
-                            <a target="_blank">
-                                不是吗
-                            </a>
-                        </li>
-                        <li class="">
-                            <a target="_blank">
-                          你觉得呢
-                            </a>
-                        </li>
-                        <li class="">
-                            <a target="_blank">
-                              要是你觉得我不帅
-                            </a>
-                        </li>
-                        <li class="">
-                            <a target="_blank">
-                                那么请你跳出来
-                            </a>
-                        </li>
-                    </ul>
+                    `,
+                    style: {
+                        // background: 'red'
+                    },
+                    className: 'BS_Widgets_self_style_6',
+                    labels: ['可以设置自动播放或者鼠标落上交互','基于淘宝Carousel修改']
+                },{
+                    code: `
+                    <div  id="J_MallSlide" class="J_TWidget"
+                    data-widget-type="Carousel"
+                    data-widget-config=${JSON.stringify(widgetConfig.self.style_5)}>
+                        <a title="上一页" href="javascript:void(0);" hidefocus="true" class="prev_btn"><img src="http://img03.taobaocdn.com/imgextra/i3/456989075/TB2ychobFXXXXb6XXXXXXXXXXXX-456989075.png" width="20" style="margin: 0 auto;"></a>
+                        <a title="下一页" href="javascript:void(0);" hidefocus="true" class="next_btn"><img src="http://img02.taobaocdn.com/imgextra/i2/456989075/TB2oL4mbFXXXXXtXpXXXXXXXXXX-456989075.png" width="20" style="margin: 0 auto;"></a>
+                        <div class="BS_W_s_s_6_banner_desc"></div>
+                        <span class="BS_W_s_s_6_logo"></span>
+                        <div id="J_Carousel" class="clearfix" >
+                            <ul class="ks-switchable-content">
+                                <li class="big-piclist">
+                                    <img src="http://placeimg.com/700/466/people" />
+                                </li>
+                                <li class="big-piclist">
+                                    <img src="http://placeimg.com/700/466/tech" />
+                                </li>
+                                <li class="big-piclist">
+                                    <img src="http://placeimg.com/700/466/animals" />
+                                </li>
+                            </ul>
+                            <ul class="ks-switchable-nav">
+                                <li class="ks-active">
+                                    <img src='http://placeimg.com/700/466/people' />
+                                    <p>
+                                        The official guide assumes intermediate level knowledge of HTML, CSS, and JavaScript.
+                                    </p>
+                                    <span class="BS_W_s_s_6_logo">
+                                        <img src="https://img.alicdn.com/imgextra/i3/2165860564/TB2fJA8jljTBKNjSZFwXXcG4XXa_!!2165860564.png">
+                                    </span>
+                                </li>
+                                <li >
+                                    <img src='http://placeimg.com/700/466/tech' />
+                                    <p>
+                                        The official guide assumes intermediate level knowledge of HTML, CSS, and JavaScript.
+                                    </p>
+                                    <span class="BS_W_s_s_6_logo">
+                                        <img src="https://img.alicdn.com/imgextra/i1/2165860564/TB2AyisXxtnkeRjSZSgXXXAuXXa_!!2165860564.png">
+                                    </span>
+
+                                </li>
+                                <li>
+                                    <img src='http://placeimg.com/700/466/animals' />
+                                    <p>
+                                        The official guide assumes intermediate level knowledge of HTML, CSS, and JavaScript.
+                                    </p>
+                                    <span class="BS_W_s_s_6_logo">
+                                        <img src="https://img.alicdn.com/imgextra/i4/2165860564/TB2XqYmjmMmBKNjSZTEXXasKpXa_!!2165860564.png">
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     `,
                     style: {
                         // background: 'red'
                     },
                     className: 'BS_Widgets_self_style_5'
+                }, {
+                    code: `
+                    <div id="J_MallSlide" class="J_TWidget" data-widget-type="Carousel"
+                    data-widget-config=${JSON.stringify(widgetConfig.self.style_7)}>
+                        <div id="J_Carousel" class="clearfix">
+                        <ul class="ks-switchable-content">
+                            <li class=""></li>
+                            <li class=""></li>
+                            <li class=""></li>
+                            </ul>
+                            <ul class="ks-switchable-nav">
+                                <li class="bs-active">
+                                    <div class="BS_s_s_7_left_side">
+                                        <div>
+                                        <h2>Hello picture 1</h2>
+                                        Column span. Value can be between 0 and 24. When 0, it equals to
+                                        </div>
+
+                                    </div>
+                                    <div class="BS_s_s_7_right_side">
+                                        <div class="BS_s_s_border_1 BS_s_s_7_bg"></div>
+                                        <div class="BS_s_s_border_2 BS_s_s_7_bg"></div>
+                                        <div class="BS_s_s_border_3 BS_s_s_7_bg"></div>
+                                        <img src='http://placeimg.com/700/466/tech' />
+                                        <span class="BS_s_s_7_vertical_line"></span>
+
+                                    </div>
+                                    <span class="BS_s_s_7_page BS_s_s_7_page_1">
+                                        01
+                                        <b></b>
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="BS_s_s_7_left_side">
+                                        <div>
+                                        <h2>Hello picture 2</h2>
+                                        Column span. Value can be between 0 and 24. When 0, it equals to
+                                        </div>
+
+                                    </div>
+
+                                    <div class="BS_s_s_7_right_side">
+                                        <div class="BS_s_s_border_1 BS_s_s_7_bg"></div>
+                                        <div class="BS_s_s_border_2 BS_s_s_7_bg"></div>
+                                        <div class="BS_s_s_border_3 BS_s_s_7_bg"></div>
+                                        <img src='http://placeimg.com/700/466/animals' />
+                                        <span class="BS_s_s_7_vertical_line"></span>
+                                    </div>
+                                    <span  class="BS_s_s_7_page_2 BS_s_s_7_page">
+                                        02
+                                        <b></b>
+                                    </span>
+                                </li>
+                                <li>
+                                    <div class="BS_s_s_7_left_side">
+                                        <div>
+                                        <h2>Hello picture 3</h2>
+                                        Column span. Value can be between 0 and 24. When 0, it equals to
+                                        </div>
+
+                                    </div>
+                                    <div class="BS_s_s_7_right_side">
+                                        <div class="BS_s_s_border_1 BS_s_s_7_bg"></div>
+                                        <div class="BS_s_s_border_2 BS_s_s_7_bg"></div>
+                                        <div class="BS_s_s_border_3 BS_s_s_7_bg"></div>
+                                        <img src='http://placeimg.com/700/466/people' />
+                                        <span class="BS_s_s_7_vertical_line"></span>
+
+                                    </div>
+                                    <span  class="BS_s_s_7_page_3 BS_s_s_7_page">
+                                        03
+                                        <b></b>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    `,
+                    style: {
+                        // background: 'red'
+                    },
+                    className: 'BS_Widgets_self_style_7'
                 }],
                 //
             }

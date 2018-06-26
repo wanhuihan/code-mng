@@ -1,0 +1,74 @@
+
+//
+.BS_Widget_btn_style_1 {
+    // border: 1px solid;
+    span {
+        display: inline-block;
+        padding: 10px 20px;
+        width: 120px;
+        overflow: hidden;
+        text-align: center;
+        cursor: pointer;
+        color: black;
+        transition: color 0.1s ease-in;
+        // border: 1px solid #eee;
+        // border-color: transparent transparent BLACK green ;
+        border-style: solid;
+        // border-width: 0 0 60px 40px;
+        // width: 50px;
+        // height: 50px;
+        position: relative;
+        .BS_W_btn_s_1_left {
+            z-index: -1;
+            border-color: transparent transparent BLACK BLACK ;
+            display: inline-block;
+            // content: "111";
+            border-width: 60px;
+            border-style: solid;
+            // transform: rotate(-45deg);
+            position: absolute;
+            left: -40%;
+            top: 0;
+            transition: top 0.1s ease-in;
+        }
+        .BS_W_btn_s_1_right {
+            z-index: -1;
+            border-color: BLACK BLACK transparent transparent;
+            display: inline-block;
+            // content: "111";
+            border-width: 60px;
+            border-style: solid;
+            // transform: rotate(-45deg);
+            position: absolute;
+            right: -32%;
+            top: -218%;
+            transition: top 0.1s ease-in;
+        }
+        // border-color: transparent transparent transparent #333;
+        // box-sizing: border-box;
+        // border-width: 25px;
+        // border-style: solid;
+        // border-color:red green blue black;
+        &:hover {
+            color: #ffffff;
+            transition: color 0.1s ease-in;
+            .BS_W_btn_s_1_left {
+                // border-width: 40px;
+                top: -217%;
+                transition: top 0.1s ease-in;
+            }
+            .BS_W_btn_s_1_right {
+                top: 1%;
+                transition: top 0.1s ease-in;
+            }
+            // border:20px solid;
+
+                // background: #000;
+                // border-style: solid;
+                // border-color:red green blue pink;
+                // border-width: 100px;
+
+        }
+    }
+
+}

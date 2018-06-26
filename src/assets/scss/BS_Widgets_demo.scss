@@ -2,6 +2,7 @@
 // This is the only style for demostration for the workmates in BS, the class name 'demo' will be removed when generate the code for TB.
 .demo {
     &.BS_Widgets_tabs {
+
         &.BS_Widgets_tabs_style_1 {
             .ks-switchable-nav {
                 // font-size: 0;
@@ -41,6 +42,9 @@
     &.BS_Widgets  {
         width: 80%;
     }
+    &.BS_Widgets_self_style_2 {
+        width: 20%;
+    }
     &.BS_Widgets_self_style_4  {
         width:405px;
         height: 220px;
@@ -66,6 +70,33 @@
                 }
             }
 
+        }
+    }
+    &.BS_Widgets_self_style_5 {
+        width: auto;
+        .ks-switchable-nav {
+            // left: 766px;
+            position: absolute;
+            // right: 0;
+            width: 700px;
+            li {
+                height: 466px;
+            }
+            .ks-active {
+                img {
+                    // left: -400px;
+                    left: 0;
+                    // top: 95px;
+                }
+            }
+        }
+        .ks-switchable-content {
+            .big-piclist {
+                img {
+                    width: 700px;
+                    height: 466px;
+                }
+            }
         }
     }
 }

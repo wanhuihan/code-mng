@@ -3,11 +3,9 @@
         <navigation></navigation>
         <router-view></router-view>
     </div>
-
 </template>
 
 <script>
-
 import '../assets/scss/BS_Widgets.scss';
 
 import '../assets/scss/BS_Widgets_demo.scss';
@@ -15,7 +13,6 @@ import '../assets/scss/BS_Widgets_demo.scss';
 import navigation from './public/navigation';
 //
 import codeGenerate from './codeGenerate';
-
     export default {
         data () {
             return {
@@ -26,7 +23,7 @@ import codeGenerate from './codeGenerate';
                 //
                 currentItem: {},
                 //
-                currentWidget: ''+6
+                currentWidget: '' + 6
             }
         },
         components: {
@@ -58,10 +55,10 @@ import codeGenerate from './codeGenerate';
 
 .BS_Widgets {
     //
-    border:1px solid #eee;
-    padding: 15px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
+    // border:1px solid #eee;
+    // padding: 15px;
+    // margin-bottom: 10px;
+    // box-sizing: border-box;
 }
 
     .home {

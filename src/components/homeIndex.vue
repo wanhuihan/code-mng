@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-
+        <!-- <img src='../assets/images/BS_Widgets_self_style_5_3.jpg' /> -->
         <div class="effect_body">
             <div class="" v-for="(item, index) in this.widgets">
                 <!-- <h2>Best Seller Taobao effect widgets - {{index}}</h2> -->
@@ -42,6 +42,7 @@
 
 import '../assets/scss/BS_Widgets.scss';
 //
+// import '../assets/images/BS_Widgets_self_style_5_1.jpg';
 import codeGenerate from './codeGenerate';
 
     export default {
@@ -99,10 +100,10 @@ import codeGenerate from './codeGenerate';
 
 .BS_Widgets {
     //
-    border:1px solid #eee;
-    padding: 15px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
+    // border:1px solid #eee;
+    // padding: 15px;
+    // margin-bottom: 10px;
+    // box-sizing: border-box;
 }
 .home {
     .effect_body {

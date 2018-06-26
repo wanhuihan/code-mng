@@ -16,11 +16,31 @@
             </div>
 
         </div>
+        <!--  -->
+        <h2>Button Styles</h2>
+
+        <ul>
+            <li>
+                <div class="BS_Widget_btn_style_1">
+
+                    <span>
+                        <b class="BS_W_btn_s_1_left"></b>
+                        SHOP NOW
+                        <b class="BS_W_btn_s_1_right"></b>
+                    </span>
+
+                </div>
+            </li>
+        </ul>
     </div>
 
 </template>
 
+
 <script>
+
+import '../../assets/scss/BS_Widgets_button.scss';
+// import '../../assets/scss/BS_Widgets_demo.scss';
 export default {
 }
 </script>
