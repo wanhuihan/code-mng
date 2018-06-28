@@ -21,6 +21,7 @@
                 </div>
             </div>
         </div>
+        <img src="../assets/images/1.jpg">
         <Modal
             v-model="codeGenerate"
             title="添加模块"
@@ -83,8 +84,7 @@ import codeGenerate from './codeGenerate';
                 this.currentWidget = index;
                 //
                 this.codeGenerate = true;
-
-                console.log(arguments)
+                // console.log(arguments)
             },
             //
             close(f) {
@@ -92,8 +92,24 @@ import codeGenerate from './codeGenerate';
                 this.codeGenerate = f();
                 // console.log(f)
             }
+        },
+        mounted () {
+            //
+            // 800x500
+            // 200x200
+            //
+            // console.log()
+            this.$store.commit('getImg', [
+                '../assets/images/1.jpg'
+            ]
+                );
+            //
+            console.log(this.$store.state);
+            // console.log(this.$store.commit('getImg'));
         }
     }
+    //
+
 </script>
 
 <style lang="scss" >

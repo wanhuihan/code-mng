@@ -530,6 +530,91 @@
                 }
             }
         }
+        //
+        &.BS_Widgets_self_style_8  {
+            //
+            position: relative;
+            padding-top: 50px;
+            //
+            .BS_Widgets_content {
+                width: 700px;
+                overflow: hidden;
+                height: 404px;
+                margin: 0 auto;
+                z-index: 1;
+                // margin-top: 50px;
+                .big-piclist {
+                    img {
+                        height: 400px;
+                    }
+                }
+            }
+            .mall-prev, .mall-next {
+                position: absolute;
+                right: 0;
+                z-index: 1;
+                width: 50px;
+                height: 50px;
+                background: rgba(0,0,0,0.5);
+                bottom: 0;
+            }
+            .mall-prev {
+                right: 70px;
+            }
+            .ks-switchable-nav {
+                .slice {
+                    .slice_bg {
+                        width: 100%;
+                        height: 400px;
+                        overflow: hidden;
+                        position: absolute;
+                        top: 0;
+                        opacity: 0;
+                        span {
+                            display: block;
+                            width: 500px;
+                            height: 400px;
+                            background: #fff;
+                            position: absolute;
+                            top: 0;
+                            right: 50px;
+                        }
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    b {
+                        width: 10px;
+                        height: 10px;
+                        position: absolute;
+                        background:#fff;
+                        top: 50px;
+                        left: 100px;
+                        z-index: 2;
+                    }
+                    &:nth-child(2) {
+                        b {
+                            top: 70px;
+                        }
+                    }
+                    &:nth-child(3) {
+                        b {
+                            top: 90px;
+                        }
+                    }
+
+                }
+                .ks-active {
+                    .slice_bg {
+                        opacity: 1;
+                        transition: opacity 2s ease-in;
+                    }
+                    b {
+                        background: #000;
+                    }
+                }
+            }
+        }
     }
 }
 //

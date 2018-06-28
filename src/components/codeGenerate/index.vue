@@ -1,7 +1,9 @@
 <template lang="html">
 
     <div class="">
-        <tab :item="this.$props.item" @popupClose="close" ></tab>
+        <!-- 瀑布流 -->
+        <waterfallShow :item="this.$props.item" @popupClose="close" v-if="this.$props.item.className == 'BS_Widgets_self_style_2'"></waterfallShow>
+
         <!-- {{this.$props.item.code}} -->
     </div>
 
@@ -9,22 +11,24 @@
 
 <script>
 //
-import tab from './tabs.vue';
+//
+import waterfallShow from './waterfallShow.vue';
 
 export default {
     //
     components: {
-        tab: tab,
+        waterfallShow: waterfallShow,
         inputItems: []
     },
     //
     props: ['item','widget'],
     //
     created() {
-
+        console.log(this.$props.item,'+');
         //
     },
     mounted () {
+        console.log(this.$props.item)
         // this.$refs.widgets.inputItems = this.inputItems;
         // console.log(this.$refs.widgets.inputItems);
     },

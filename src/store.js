@@ -77,28 +77,44 @@ let demoHtml = {
                 <li><img src="http://via.placeholder.com/150x180/f1f2f7?text="></li>
                 <li><img src="http://via.placeholder.com/150x180?text="></li>`
 }
+
+import image1 from './assets/images/1.jpg';
+import image2 from './assets/images/2.jpg';
+import image3 from './assets/images/3.jpg';
+import image4 from './assets/images/4.jpg';
+import image5 from './assets/images/5.jpg';
+import image6 from './assets/images/6.jpg';
+import image7 from './assets/images/7.jpg';
+import image8 from './assets/images/8.jpg';
+import image9 from './assets/images/9.jpg';
+import image10 from './assets/images/10.jpg';
+import image11 from './assets/images/11.jpg';
+import image12 from './assets/images/12.jpg';
+import image13 from './assets/images/13.jpg';
+//
 let effects = new Vuex.Store({
     //
+    getters: {
+        getImgList: (state) => {
+            return state.imgList;
+        }
+    },
+    //
     state: {
+        //
+        imgList: [],
         //
         BS_Widgets: {
             carousels: {
                 name: 'carousel',
                 styles:[{
                     code: `<div  class="section  J_TWidget">
+
                         <span id="scroller-prev" class="prev disable">? 上一页</span>
                         <span id="scroller-next" class="next">下一页 ?</span>
                         <div class="scroller">
                             <div class="ks-switchable-content">
-                                <img alt="" src="###"/>
-                                <img alt="" src="###"/>
-                            <img alt="" src="###"/>
-                                <img alt="" src="###"/>
-                            <img alt="" src="###"/>
-                            <img alt="" src="###"/>
-                                <img alt="" src="###"/>
-                            <img alt="" src="###"/>
-                            <img alt="" src="###"/>
+                                <img alt="" src=${image6}/>
                             </div>
                             <ul class="ks-switchable-nav">
                                 <li class="ks-active">?</li>
@@ -227,7 +243,12 @@ let effects = new Vuex.Store({
                 }, {
                     code: `
                         <ul>
-                            ${demoHtml.tabs}
+                            <li><img src="http://fpoimg.com/150x180?bg_color=C90000&text_color=cccccc&"></li>
+                            <li><img src="http://fpoimg.com/150x180?bg_color=4A59FF&text_color=cccccc&"></li>
+                            <li><img src="http://fpoimg.com/150x180?bg_color=00eeee&text_color=cccccc&"></li>
+                            <li><img src="http://fpoimg.com/150x180?bg_color=666666&text_color=cccccc&"></li>
+                            <li><img src="http://fpoimg.com/150x180?bg_color=eeeeee&text_color=cccccc&"></li>
+                            <li><img src="http://fpoimg.com/150x180?bg_color=e5b72a&text_color=cccccc&"></li>
                         </ul>
                     `,
                     imgs: [],
@@ -307,7 +328,7 @@ let effects = new Vuex.Store({
                     code: `
                     <div class="J_TWidget section" data-widget-type="Slide"
                     data-widget-config="{'navCls':'yslider-stick','contentCls':'yslider-stage','activeTriggerCls':'selected',
-                    'delay':0.2,'effect':'fade','easing':'easeBoth','duration':0.8,'autoplay':true}">
+                    'delay':0.2,'effect':'fade','easing':'easeBoth','duration':0.8,'autoplay':false}">
                         <div class="yslider-stage">
                             <p>
                                 <img width="405" height="220" alt="终极秒杀场" src="http://placeimg.com/640/480/animals"/>
@@ -453,7 +474,6 @@ let effects = new Vuex.Store({
                                         <h2>Hello picture 1</h2>
                                         Column span. Value can be between 0 and 24. When 0, it equals to
                                         </div>
-
                                     </div>
                                     <div class="BS_s_s_7_right_side">
                                         <div class="BS_s_s_border_1 BS_s_s_7_bg"></div>
@@ -518,11 +538,81 @@ let effects = new Vuex.Store({
                         // background: 'red'
                     },
                     className: 'BS_Widgets_self_style_7'
+                }, {
+                    code: `
+                    <div  id="J_MallSlide" class="J_TWidget"
+                    data-widget-type="Carousel"
+                    data-widget-config="{'navCls':'ks-switchable-nav','contentCls':'ks-switchable-content','effect': 'scrolly',
+                    'easing': 'easeOutStrong', 'steps':1, 'viewSize': [700], 'circular': true,
+                    'prevBtnCls': 'mall-prev', 'nextBtnCls': 'mall-next', 'disableBtnCls': 'disable','autoplay':true}">
+                        <div id="J_Carousel" class=" BS_Widgets_content clearfix" >
+                            <ul class="ks-switchable-content">
+                                <li class="big-piclist">
+                                    <img src="http://fpoimg.com/700x400?text=Demo1">
+                                </li>
+                                <li class="big-piclist">
+                                    <img src="http://fpoimg.com/700x400?text=Demo2">
+                                </li>
+                                <li class="big-piclist">
+                                    <img src="http://fpoimg.com/700x400?text=Demo3">
+                                </li>
+                            </ul>
+                            <a title="上一页" href="javascript:void(0);" hidefocus="true" class="mall-prev"><</a>
+                            <a title="下一页" href="javascript:void(0);" hidefocus="true" class="mall-next">></a>
+                        </div>
+                        <ul class="ks-switchable-nav">
+                            <li class="slice ks-active">
+                                <div class="slice_bg">
+                                    <img src="http://fpoimg.com/700x400?bg_color=BFC5FF&text=Demo1">
+                                    <span></span>
+                                </div>
+                                <b></b>
+                            </li>
+                            <li class="slice">
+                                <div class="slice_bg">
+                                    <img src="http://fpoimg.com/700x400?bg_color=00eeee&text=Demo2">
+                                    <span></span>
+                                </div>
+                                <b></b>
+                            </li>
+                            <li class="slice">
+                                <div class="slice_bg">
+                                    <img src="http://fpoimg.com/700x400?bg_color=C90000&text=Demo3">
+                                    <span></span>
+                                </div>
+                                <b></b>
+                            </li>
+                        </ul>
+
+                    </div>
+                    `,
+                    style: {
+                        // background: 'red'
+                    },
+                    className: 'BS_Widgets_self_style_8'
                 }],
                 //
             }
         }
+    },
+    //
+    mutations: {
+        getImg(state, src) {
+            //
+            for (let i =0; i < src.length; i++) {
+                state.imgList.push(src[i]);
+            }
+            // state.imgList.push(src);
+            console.log(state.imgList);
+        },
+        //
+        test: function() {
+
+        }
     }
+
 });
 //
+console.log(this);
+
 export default effects;

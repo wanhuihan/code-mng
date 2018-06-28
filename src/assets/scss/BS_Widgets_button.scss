@@ -72,3 +72,24 @@
     }
 
 }
+//
+.BS_Widgest_circle {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:3px solid;
+}
+.BS_Widgest_circle_opacity {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:10px solid red;
+    opacity: 0;
+    &:hover {
+        opacity: 1;
+        transform: rotate(360deg);
+        transition: opacity 3s ease-in, transform 3s ease-in;
+    }
+}
